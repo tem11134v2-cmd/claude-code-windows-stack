@@ -19,7 +19,7 @@ Write-Host "[1/2] Профиль Proxifier..."
 
 if ([string]::IsNullOrWhiteSpace($profilePath)) {
     Write-Host "  proxifier.profilePath пуст — пропускаю."
-    Write-Host "  Настроишь профиль руками по 00-server/README.md, §4."
+    Write-Host "  Настроишь профиль руками по 00-server/README.md, §5."
 } elseif (-not (Test-Path $profilePath)) {
     Write-Host "  ВНИМАНИЕ: файл не найден: $profilePath"
     Write-Host "  Проверь путь в config.json или настрой профиль руками."

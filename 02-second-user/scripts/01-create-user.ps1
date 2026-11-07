@@ -46,7 +46,8 @@ if ($exists) {
 
 Write-Host ""
 Write-Host "[2/3] Добавляю в Administrators и Remote Desktop Users..."
-Write-Host "      (Administrators нужен, чтобы Proxifier мог перехватывать чужой трафик — см. ARCHITECTURE.md)"
+Write-Host "      (Administrators — для удобства: ставить софт и менять настройки системы."
+Write-Host "       Proxifier админских прав у рабочего пользователя НЕ требует, см. ARCHITECTURE.md)"
 
 foreach ($group in @("Administrators", "Remote Desktop Users")) {
     try {
