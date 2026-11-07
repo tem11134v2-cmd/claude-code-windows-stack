@@ -1,0 +1,28 @@
+{
+  "_comment": "Скопируй в config.json и поправь под эту машину. config.json в .gitignore — коммитить его нельзя. Пароля здесь нет намеренно: скрипт спросит его в момент выполнения и нигде не сохранит.",
+
+  "machine": {
+    "_comment": "Только для вывода в лог.",
+    "name": "TBD"
+  },
+
+  "user": {
+    "_comment": "Имя создаваемого рабочего пользователя. Будет добавлен в Administrators — это нужно, чтобы Proxifier мог перехватывать трафик других пользователей. См. ARCHITECTURE.md.",
+    "name": "devuser"
+  },
+
+  "paths": {
+    "_comment": "Где живут рабочие проекты. Новый пользователь получит полный доступ к этой папке.",
+    "projects": "C:\\projects"
+  },
+
+  "proxifier": {
+    "_comment": "Путь к .ppx профилю, который ты экспортировал сам (Proxifier → File → Export Profile). Оставь пустым, если настроишь профиль руками под новым пользователем.",
+    "profilePath": ""
+  },
+
+  "claudeCode": {
+    "_comment": "Режим разрешений по умолчанию: acceptEdits, auto, bypassPermissions, plan. См. ARCHITECTURE.md о том, почему auto.",
+    "defaultMode": "auto"
+  }
+}

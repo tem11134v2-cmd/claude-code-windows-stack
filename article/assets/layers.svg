@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" width="860" height="470" role="img" aria-labelledby="t d">
+  <title id="t">Четыре слоя сборки</title>
+  <desc id="d">Сборка делится на четыре независимых слоя: железо и сеть, рабочее место, люди, проекты и инструменты. У каждого своя граница готовности и своё время.</desc>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --ink: #15181d;
+      --muted: #666d78;
+      --line: #cfd4dc;
+      --box: #f7f8fa;
+      --accent: #1f5fd0;
+      --accent-soft: #eaf1fd;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #13151a;
+        --ink: #e9ebef;
+        --muted: #99a0ab;
+        --line: #393f4a;
+        --box: #1b1e25;
+        --accent: #7aacff;
+        --accent-soft: #19253a;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #13151a;
+      --ink: #e9ebef;
+      --muted: #99a0ab;
+      --line: #393f4a;
+      --box: #1b1e25;
+      --accent: #7aacff;
+      --accent-soft: #19253a;
+    }
+    .canvas { fill: var(--bg); }
+    text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      fill: var(--ink);
+    }
+    .h1 { font-size: 19px; font-weight: 700; }
+    .sub { font-size: 13px; fill: var(--muted); }
+    .num { font-size: 15px; font-weight: 700; fill: var(--accent); }
+    .name { font-size: 14.5px; font-weight: 700; }
+    .got { font-size: 12.5px; fill: var(--muted); }
+    .time { font-size: 12.5px; font-weight: 700; fill: var(--accent); }
+    .card { fill: var(--box); stroke: var(--line); stroke-width: 1.5; }
+    .chip { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.4; }
+    .rail { fill: none; stroke: var(--line); stroke-width: 2; }
+  </style>
+
+  <rect class="canvas" x="0" y="0" width="860" height="470"/>
+
+  <text class="h1" x="30" y="34">Четыре слоя</text>
+  <text class="sub" x="30" y="57">Каждый проходится отдельно и кончается своей проверкой. Не нужен слой — пропусти его.</text>
+
+  <path class="rail" d="M56,100 L56,420"/>
+
+  <!-- layer 0 -->
+  <circle class="chip" cx="56" cy="124" r="17"/>
+  <text class="num" x="56" y="129" text-anchor="middle">0</text>
+  <rect class="card" x="92" y="92" width="738" height="64" rx="10"/>
+  <text class="name" x="112" y="118">Железо и сеть</text>
+  <text class="got" x="112" y="140">Сервер есть, весь трафик идёт одним путём, утечек нет</text>
+  <text class="time" x="810" y="130" text-anchor="end">1–2 часа</text>
+
+  <!-- layer 1 -->
+  <circle class="chip" cx="56" cy="222" r="17"/>
+  <text class="num" x="56" y="227" text-anchor="middle">1</text>
+  <rect class="card" x="92" y="190" width="738" height="64" rx="10"/>
+  <text class="name" x="112" y="216">Рабочее место</text>
+  <text class="got" x="112" y="238">git, gh, Scoop, mise, SSH-ключ — и Claude Code, который видит bash</text>
+  <text class="time" x="810" y="228" text-anchor="end">30–60 минут</text>
+
+  <!-- layer 2 -->
+  <circle class="chip" cx="56" cy="320" r="17"/>
+  <text class="num" x="56" y="325" text-anchor="middle">2</text>
+  <rect class="card" x="92" y="288" width="738" height="64" rx="10"/>
+  <text class="name" x="112" y="314">Люди</text>
+  <text class="got" x="112" y="336">Второй юзер со своей сессией, его трафик тоже под прокси</text>
+  <text class="time" x="810" y="326" text-anchor="end">15 минут</text>
+
+  <!-- layer 3 -->
+  <circle class="chip" cx="56" cy="418" r="17"/>
+  <text class="num" x="56" y="423" text-anchor="middle">3</text>
+  <rect class="card" x="92" y="386" width="738" height="64" rx="10"/>
+  <text class="name" x="112" y="412">Проекты и инструменты</text>
+  <text class="got" x="112" y="434">Новый проект одной командой, MCP для картинок и CDN</text>
+  <text class="time" x="810" y="424" text-anchor="end">2–10 минут</text>
+</svg>

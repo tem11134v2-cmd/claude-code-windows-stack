@@ -1,0 +1,30 @@
+# Локальный конфиг — на каждой машине свой, содержит имена пользователей и пути
+config.json
+**/config.json
+
+# Секреты — здесь их быть не должно вообще, но на всякий случай
+secrets/
+*.ppx
+*.pem
+*.key
+id_ed25519
+id_ed25519.pub
+*.reg
+.env
+.env.*
+!.env.example
+
+# Windows
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Редакторы
+.vscode/
+.idea/
+*.swp
+*~
+
+# Временное
+*.log
+tmp/
