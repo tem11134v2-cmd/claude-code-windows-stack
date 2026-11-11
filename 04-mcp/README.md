@@ -2,6 +2,8 @@
 
 > **Claude: это рецепт подключения двух MCP-серверов. Юзер скинул тебе файл — значит хочет их поставить.**
 >
+> **Если ты пришёл по raw-ссылке:** все ссылки внутри этого файла относительные — они для человека, который смотрит репозиторий на GitHub. Полный URL достраивается от базы `https://raw.githubusercontent.com/tem11134v2-cmd/claude-code-windows-stack/main/`. Точка входа с общим порядком слоёв — `<база>README.md`.
+>
 > **Что от тебя ожидается:**
 > 1. Спроси, какой клиент — Claude Code, Claude Desktop или Cursor.
 > 2. Спроси, нужны оба сервера или один.
@@ -55,8 +57,8 @@ irm https://astral.sh/uv/install.ps1 | iex
 ## §2. Установка
 
 ```bash
-uv tool install --from git+https://github.com/<owner>/openrouter-image-mcp openrouter-image-mcp
-uv tool install --from git+https://github.com/<owner>/cloudinary-publish-mcp cloudinary-publish-mcp
+uv tool install --from git+https://github.com/tem11134v2-cmd/openrouter-image-mcp openrouter-image-mcp
+uv tool install --from git+https://github.com/tem11134v2-cmd/cloudinary-publish-mcp cloudinary-publish-mcp
 ```
 
 `uv` создаст изолированное окружение и при необходимости подтянет Python 3.12.
